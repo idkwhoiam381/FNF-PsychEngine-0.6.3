@@ -56,11 +56,11 @@
       "version": null
     },
     {
-      "name": "extension-androidtools",
+      "name": "discord_rpc",
       "type": "git",
       "dir": null,
-      "ref": "main",
-      "url": "https://github.com/MAJigsaw77/extension-androidtools"
+      "ref": "master",
+      "url": "https://github.com/Aidan63/linc_discord-rpc"
     },
     {
       "name": "hscript-ex",
