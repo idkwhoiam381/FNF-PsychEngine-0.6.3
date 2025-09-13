@@ -16,7 +16,7 @@ jobs:
         id: setup-ndk
         uses: nttld/setup-ndk@main
         with:
-          ndk-version: r25c
+          ndk-version: r21e
 
       - name: Setup Java JDK
         uses: actions/setup-java@main
@@ -25,17 +25,15 @@ jobs:
           java-version: '18'
 
       - name: Setup Haxe
-        uses: krdlab/setup-haxe@master
+        uses: krdlab/setup-haxe@v1.2.0
         with:
-          haxe-version: 4.3.4
+          haxe-version: 4.2.5
 
       - name: Installing Libraries
         run: |
           haxelib setup ~/haxelib
           haxelib install hmm --quiet
           haxelib run hmm install --quiet
-          haxelib git hxcpp https://github.com/HaxeFoundation/hxcpp
-          haxelib run lime rebuild hxcpp
 
       - name: Configure Android
         run: |
